@@ -1,0 +1,163 @@
+--// Script Config \\--
+getrenv().Script = {
+    --// Settings \\--
+    Settings = {
+        --// Silent-Aim - Settings \\--
+        SilentAim = {
+            Enabled = true,
+            AimPart = "RootPart", --// Advanced: ClosestPart, RootPart (HumanoidRootPart) \\--
+            HitChance = 100,
+            Method = "Remote Hook", --// Remote Hook, Mouse Hook, Remote Fire \\--
+            
+            --// 
+            Targeting = {
+                Method = "Normal", --// Normal, Closest, Furthest \\--
+                Distance = {
+                    Minimum = 0,
+                    Maximum = math.huge,
+                },
+            },
+            
+            Prediction = {
+                Enabled = true,
+                Method = "Multiplication", --// Multiplication, Division \\--
+                
+                Multiplication = {
+                    Horizontal = 0.16,
+                    Vertical = 0.1,
+                },
+                
+                Division = {
+                    Horizontal = 6.5,
+                    Vertical = 10,
+                },
+                
+                Automatic = {
+                    Enabled = true,
+                    
+                    Horizontal = {
+                        Add = 0.1,
+                        Multiply = 0.1,
+                        Divide = 160,
+                    },
+                    
+                    Vertical = {
+                        Add = 0.1,
+                        Multiply = 0.1,
+                        Divide = 320,
+                    },
+                },
+                
+            },
+            
+        },
+        
+        --// Triggerbot - Settings \\--
+        Triggerbot = {
+            Enabled = true,
+            ActivationDelay = 0.25,
+        },
+        
+        --// Checks - Settings \\--
+        Checks = {
+            Wall = true,
+            Knocked = false,
+            Death = false,
+            Grabbed = false,
+            Friend = false,
+            Crew = false,
+            ForceField = false,
+        },
+        
+        --// Velocity - Settings \\--
+        Velocity = {
+            Type = "Velocity", --// Velocity, AssemblyLinearVelocity \\--
+            
+            Minimum = {
+                X = -math.huge,
+                Y = -math.huge,
+                Z = -math.huge,
+            },
+            
+            Maximum = {
+                X = math.huge,
+                Y = math.huge,
+                Z = math.huge,
+            },
+        },
+        
+        --// Offsets Settings \\--
+        Offsets = {
+            Enabled = false,
+            Jumping = 0,
+            Falling = 0,
+        },
+        
+        --// Resolver - Settings \\--
+        Resolver = {
+            Enabled = false,
+            Method = "Recalculate Velocity", --// Recalculate Velocity, Move Direction, Move Velocity \\--
+            Smoothness = {
+                Enabled = false,
+                Value = 0.15,
+            },
+        },
+        
+        --// Circle - Settings \\--
+        Circle = {
+            Visible = false,
+            Transparency = 1,
+            Color = Color3.fromRGB(255, 255, 255),
+            Radius = 125,
+            Position = "Crosshair", --// Crosshair, Center, Finger, Mouse \\--
+            
+            --// Circle Gradient Settings \\--
+            Gradient = {
+                Enabled = false,
+                Rotation = 0,
+                
+                Colors = {
+                    One = Color3.fromRGB(255, 255, 255),
+                    Two = Color3.fromRGB(0, 0, 0),
+                },
+                
+                --// Circle Gradient Animation Settings \\--
+                Animation = {
+                    Enabled = false,
+                    Speed = 1,
+                    Offset = Vector2.new(0, 0),
+                },
+            },
+            
+            --// Circle Stroke Settings \\--
+            Stroke = {
+                Visible = true,
+                Transparency = 0,
+                Thickness = 2.5,
+                Color = Color3.fromRGB(255, 255, 255),
+                
+                --// Circle Stroke Gradient Settings \\--
+                Gradient = {
+                    Enabled = true,
+                    Rotation = 0,
+                    
+                    Colors = {
+                        One = Color3.fromRGB(255, 255, 255),
+                        Two = Color3.fromRGB(0, 0, 0),
+                    },
+                    
+                    --// Circle Stroke Gradient Animation Settings \\--
+                    Animation = {
+                        Enabled = true,
+                        Speed = 1,
+                        Offset = Vector2.new(0, 0),
+                    },
+                },
+                
+            },
+        },
+    },
+}
+
+-- Dahood Silent-Aim [NEW]
+loadstring(Game:HttpGet("https://raw.githubusercontent.com/TheRealXORA/Roblox/refs/heads/Main/Scripts%20/Dahood%20Silent-Aim.lua", true))() 
