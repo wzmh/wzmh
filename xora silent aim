@@ -55,13 +55,13 @@ getrenv().Script = {
         --// Triggerbot - Settings \\--
         Triggerbot = {
             Enabled = true,
-            ActivationDelay = 0.25,
+            ActivationDelay = 0.1,
         },
         
         --// Checks - Settings \\--
         Checks = {
             Wall = true,
-            Knocked = false,
+            Knocked = true,
             Death = false,
             Grabbed = false,
             Friend = false,
@@ -105,8 +105,8 @@ getrenv().Script = {
         
         --// Circle - Settings \\--
         Circle = {
-            Visible = false,
-            Transparency = 1,
+            Visible = true,
+            Transparency = 0,
             Color = Color3.fromRGB(255, 255, 255),
             Radius = 125,
             Position = "Crosshair", --// Crosshair, Center, Finger, Mouse \\--
@@ -138,17 +138,17 @@ getrenv().Script = {
                 
                 --// Circle Stroke Gradient Settings \\--
                 Gradient = {
-                    Enabled = true,
+                    Enabled = false,
                     Rotation = 0,
                     
                     Colors = {
-                        One = Color3.fromRGB(255, 255, 255),
+                        One = Color3.fromRGB(0, 0, 0),
                         Two = Color3.fromRGB(0, 0, 0),
                     },
                     
                     --// Circle Stroke Gradient Animation Settings \\--
                     Animation = {
-                        Enabled = true,
+                        Enabled = false,
                         Speed = 1,
                         Offset = Vector2.new(0, 0),
                     },
