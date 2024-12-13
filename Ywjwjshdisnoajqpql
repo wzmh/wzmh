@@ -3,8 +3,8 @@
 
 -- // Coded by _notportal
 -- Example at bottom
-if not isfile("PixelOperator-Bold.ttf") then
-	writefile("PixelOperator-Bold.ttf", game:HttpGet("https://raw.githubusercontent.com/wzmh/wzmh/refs/heads/main/PixelOperator-Bold.ttf"))
+if not isfile("Roboto.ttf") then
+	writefile("Roboto.ttf", game:HttpGet("https://raw.githubusercontent.com/wzmh/wzmh/refs/heads/main/Roboto-Regular.ttf"))
 end
 if isfile("UI_FONT.font") then
 	delfile("UI_FONT.font")
@@ -129,7 +129,7 @@ do
 			end;
 		end;
 
-		Font:Register("UI_FONT", 400, "normal", {Id = "PixelOperator-Bold.ttf", Font = ""});
+		Font:Register("UI_FONT", 400, "normal", {Id = "Roboto.ttf", Font = ""});
 	end
 
 	-- // Misc Functions
