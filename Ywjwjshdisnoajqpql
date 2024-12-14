@@ -1,10 +1,10 @@
-
+.
 -- // forked by wzmh
 
 -- // Coded by _notportal
 -- Example at bottom
-if not isfile("Roboto.ttf") then
-	writefile("Roboto.ttf", game:HttpGet("https://raw.githubusercontent.com/wzmh/wzmh/refs/heads/main/Roboto-Regular.ttf"))
+if not isfile("PixelOperator-Bold.ttf") then
+	writefile("PixelOperator-Bold.ttf", game:HttpGet("https://raw.githubusercontent.com/wzmh/wzmh/refs/heads/main/PixelOperator-Bold.ttf"))
 end
 if isfile("UI_FONT.font") then
 	delfile("UI_FONT.font")
@@ -14,7 +14,7 @@ local Library = {};
 do
 	Library = {
 		Open = true;
-		Accent = Color3.fromRGB(64, 0, 64);
+		Accent = Color3.fromRGB(238, 62, 65);
 		PageAmount = 0;
 		Pages = {};
 		Sections = {};
@@ -129,7 +129,7 @@ do
 			end;
 		end;
 
-		Font:Register("UI_FONT", 400, "normal", {Id = "Roboto.ttf", Font = ""});
+		Font:Register("UI_FONT", 400, "normal", {Id = "PixelOperator-Bold.ttf", Font = ""});
 	end
 
 	-- // Misc Functions
